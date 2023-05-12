@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.13)
 
 set(PROJECT_NAME pico-boilerplate)
 
+include(pimoroni_pico_import.cmake)
 include(pico_sdk_import.cmake)
 
 project(${PROJECT_NAME} LANGUAGES C CXX ASM)

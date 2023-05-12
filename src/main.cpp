@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 
+#include "common/pimoroni_i2c.hpp"
+
+pimoroni::I2C i2c(pimoroni::BOARD::BREAKOUT_GARDEN);
+
 int main() {
     stdio_init_all();
     

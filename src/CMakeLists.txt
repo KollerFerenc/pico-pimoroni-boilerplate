@@ -2,11 +2,11 @@ add_executable(${PROJECT_NAME}
     main.cpp
 )
 
-# Include required libraries
-# include(...)
+include(common/pimoroni_i2c)
 
 target_link_libraries(${PROJECT_NAME}
     pico_stdlib
+    pimoroni_i2c
 )
 
 if(${CMAKE_BUILD_TYPE} STREQUAL "Debug")

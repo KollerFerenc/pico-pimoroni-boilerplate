@@ -1,16 +1,17 @@
 # Pico C++ Boilerplate Project <!-- omit in toc -->
 
-This project is intended as a starting point for working with the Pico SDK in C++.
+This project is intended as a starting point for working with the Pico SDK and Pimoroni Pico libraries in C++.
 
 - [Before you start](#before-you-start)
 - [Preparing your build environment](#preparing-your-build-environment)
+- [Grab the Pimoroni libraries](#grab-the-pimoroni-libraries)
 - [Clone this boilerplate](#clone-this-boilerplate)
 - [Prepare your project](#prepare-your-project)
 - [Pick your LICENSE](#pick-your-license)
 
 ## Before you start
 
-It's easier if you make a `pico` directory or similar in which you keep the SDK and your projects alongside each other. This makes it easier to include libraries.
+It's easier if you make a `pico` directory or similar in which you keep the SDK, Pimoroni Libraries and your projects alongside each other. This makes it easier to include libraries.
 
 ## Preparing your build environment
 
@@ -37,6 +38,18 @@ You should should ensure your `PICO_SDK_PATH` environment variable is set by `~/
 
 ```
 export PICO_SDK_PATH="/path/to/pico-sdk"
+```
+
+## Grab the Pimoroni libraries
+
+```
+git clone https://github.com/pimoroni/pimoroni-pico
+```
+
+You should should ensure your `PIMORONI_PICO_PATH` environment variable is set by `~/.profile`:
+
+```
+export PIMORONI_PICO_PATH="/path/to/pimoroni-pico-sdk"
 ```
 
 ## Clone this boilerplate
